@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    font-family: Quicksand;
+}
+
+/*SOME FOTO NO MOBILE*/
+@media (max-width: 600px){
+  .foto
+   {
+    display: none;
+   }
+}
+/* END FOTO MOBILE*/
+
+/* ANIMAÇÃO */
+@keyframes fundoInfinito {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* END ANIMAÇÃO*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(224, 218, 218);
+}
+
+/* MENU */
+.logo{
+    padding: 5px 0 0 0;
+}
+
+.menu{
+    background: linear-gradient(-45deg, #f0721e, #2980b9, #23d5ab, #27ae60);
+	background-size: 400% 400%;
+	animation: fundoInfinito 10s linear infinite;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    padding: 3px 0 3px 0;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    font-size: 22px;
+    color: #262626;
+    text-decoration: none;  
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a::before{
+    content: '';
+    height: 10px;
+    width: 10px;
+    left: 50%;
+    bottom: 0;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none;
+    transform: translate(-50%,50%);
+    position: absolute;
+    transition: 1s;
+}
+
+.menu li:hover a::before{
+    background: #d35400;
+    box-shadow: 15px 0 0 0 #2980b9,30px 0 0 0 #8e44ad,-15px 0 0 0 #27ae60,-30px 0 0 0 #2c3e50;
+}
+
+.menu ul{
+    padding: 0;
+}
+/*END MENU */
+
+/* CORPO */
+.corpo > h1{
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.corpo table{
+    display: inline;
+    margin: 5%;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+/* END CORPO */
+
+/* RODAPÉ */
+.rodape{
+    background: linear-gradient(-45deg, #f0721e, #2980b9, #23d5ab, #27ae60);
+	background-size: 400% 400%;
+	animation: fundoInfinito 10s linear infinite;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+.listaRodape{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.middle{
+    text-decoration: none;
+    color: black;
+}
+
+.fab{
+    padding: 0 15px 15px 0;
+    color: black;
+}
+/* END RODAPÉ */
