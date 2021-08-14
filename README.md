@@ -1,6 +1,6 @@
 # Tipos de Energias Sustentáveis
 
-😉 Site feito para trabalho do 1 semestre da faculdade.
+Site feito para trabalho do 1 semestre da faculdade.
 
 
 
